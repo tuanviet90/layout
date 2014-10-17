@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6249" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6249"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwinObj" customModule="DemoAdaptiveLayout" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dm2-i6-jrP">
+                    <rect key="frame" x="10" y="10" width="285" height="580"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJ2-ru-wmg">
+                    <rect key="frame" x="305" y="10" width="285" height="580"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dm2-i6-jrP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="3Wp-X7-vhg"/>
+                <constraint firstItem="NJ2-ru-wmg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="4Qg-DC-WcT"/>
+                <constraint firstAttribute="bottom" secondItem="dm2-i6-jrP" secondAttribute="bottom" constant="10" id="RWa-EV-7gz"/>
+                <constraint firstAttribute="trailing" secondItem="NJ2-ru-wmg" secondAttribute="trailing" constant="10" id="SzM-6z-bnG"/>
+                <constraint firstItem="NJ2-ru-wmg" firstAttribute="leading" secondItem="dm2-i6-jrP" secondAttribute="trailing" constant="10" id="VKn-fA-VG7"/>
+                <constraint firstItem="NJ2-ru-wmg" firstAttribute="width" secondItem="dm2-i6-jrP" secondAttribute="width" id="dk4-ZS-wCN"/>
+                <constraint firstItem="dm2-i6-jrP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="egH-fr-Vhl"/>
+                <constraint firstAttribute="bottom" secondItem="NJ2-ru-wmg" secondAttribute="bottom" constant="10" id="sGH-px-bMS"/>
+                <constraint firstItem="NJ2-ru-wmg" firstAttribute="leading" secondItem="dm2-i6-jrP" secondAttribute="trailing" constant="10" id="xy8-97-lvg"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
